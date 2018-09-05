@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>ShriTeq 2018</title>
+      <meta name="description" content="Examples for creative website header animations using Canvas and JavaScript" />
+      <meta name="keywords" content="header, canvas, animated, creative, inspiration, javascript" />
+      <meta name="author" content="Codrops" />
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" type="text/css" href="normalize.css" />
+      <link rel="stylesheet" type="text/css" href="demo.css" />
+      <link rel="stylesheet" type="text/css" href="component.css" />
+      <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+      <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+      <div class="content">
+      <div id="large-header" class="large-header">
+         <canvas id="demo-canvas"></canvas>
+         <h1 id="heading" class="main-title"><span class ="thin">Shri </span>Teq <p class="year">2018</p></h1>
+      </div>
+      <!--
+         <section class="form">
+         <div class="center">
+         <div class="codrops-header">
+         	<h2>Register Your School</h2>
+         </div>
+         	<form>
+         		<input type="text" name="school-name" placeholder="School Name">
+         		<br>
+         		
+           		<input type="checkbox" class="cb" value=""><a href="#hidden" data-toggle="collapse">Quiz</a>
+         		
+         
+         		<div id="hidden" class="collapse">
+         			
+         		<input class="name-surname" type="text" name="name" placeholder="Name">
+         		<input class="name-surname" type="text" name="surname" placeholder="Surname">
+         		<input type="text" name="email" placeholder="Email">
+         
+         		</div>
+         
+         
+         		<br>
+         		<input class="name-surname" type="text" name="name" placeholder="Name">
+         		<input class="name-surname" type="text" name="surname" placeholder="Surname">
+         		<input type="text" name="email" placeholder="Email">
+         		<button>REGISTER</button>
+         	</form>
+         </div>
+         </section>
+         -->
+
+	<div class="center">
+         <div class="codrops-header">
+         	<h2>Register Your School</h2>
+         </div> 
+     </div>
+
+     		<script type="text/javascript">var submitted=false;</script>
+    	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"     
+onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeZe1oJbsQy2xa_mCjAuycOy3IEmNhIF5Wc127XD7GLfmmXBg/formResponse" method="post" target="hidden_iframe" 
+onsubmit="submitted=true;">
+
+      <!--<form action="https://docs.google.com/forms/d/e/1FAIpQLSeZe1oJbsQy2xa_mCjAuycOy3IEmNhIF5Wc127XD7GLfmmXBg/formResponse" method="POST" id="ss-form" target="_self" autocomplete="on">-->
+
+         <ol role="list" class="ss-question-list" style="padding-left: 0;">
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_1600795206">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.1600795206" value="" class="ss-q-short" id="entry_1600795206" dir="auto" aria-label="Name of the School  " title="" placeholder="Name of the School">
+                     <div class="error-message" id="1489086544_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_1741695639">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.1741695639" value="" class="ss-q-short" id="entry_1741695639" dir="auto" aria-label="Full Address of the School  " title="" placeholder="Full Address of the School">
+                     <div class="error-message" id="852553811_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_675297098">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.675297098" value="" class="ss-q-short" id="entry_675297098" dir="auto" aria-label="Teacher Contact Name  " title="" placeholder="Teacher Contact Name">
+                     <div class="error-message" id="2044714424_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_774848292">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.774848292" value="" class="ss-q-short" id="entry_774848292" dir="auto" aria-label="Teacher Contact Email  " title="" placeholder="Teacher Contact Email">
+                     <div class="error-message" id="1918295370_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_1213100879">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.1213100879" value="" class="ss-q-short" id="entry_1213100879" dir="auto" aria-label="Teacher Contact Number  " title="" placeholder="Teacher Contact Number">
+                     <div class="error-message" id="1138772499_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <div class="ss-form-question errorbox-good" role="listitem">
+               <div dir="auto" class="ss-item  ss-text">
+                  <div class="ss-form-entry">
+                     <label class="ss-q-item-label" for="entry_467803449">
+                        <div class="ss-q-title"></div>
+                        <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                     </label>
+                     <input type="text" name="entry.467803449" value="" class="ss-q-short" id="entry_467803449" dir="auto" aria-label="Principal Email  " title="" placeholder="Principal Email">
+                     <div class="error-message" id="1009795007_errorMessage"></div>
+                  </div>
+               </div>
+            </div>
+            <button class="btnmain"><a data-toggle="collapse" href="#Junior">Junior</a></button>
+            <div class="collapse" id="Junior">
+               <button class="btnsmall"><a data-toggle="collapse" href="#JQuiz">TECH Quiz</a></button>
+               <div class="collapse" id="JQuiz">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1146953357">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1146953357" value="" class="ss-q-short btnvvvsmall" id="entry_1146953357" dir="auto" aria-label="JQuiz Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="1564388306_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1937127984">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1937127984" value="" class="ss-q-short btnvvvsmall" id="entry_1937127984" dir="auto" aria-label="JQuiz Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="1305663360_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1978844622">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1978844622" value="" class="ss-q-short btnvvvsmall" id="entry_1978844622" dir="auto" aria-label="JQuiz Name 3  " title="" placeholder="Participant 3">
+                           <div class="error-message" id="134573230_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="btnsmall"><a data-toggle="collapse" href="#JScratch">Building games... from SCRATCH!</a></button>
+               <div class="collapse" id="JScratch">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_2147436006">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.2147436006" value="" class="ss-q-short btnvvvsmall" id="entry_2147436006" dir="auto" aria-label="JScratch Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="115852314_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_937384203">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.937384203" value="" class="ss-q-short btnvvvsmall" id="entry_937384203" dir="auto" aria-label="JScratch Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="2009722799_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="btnsmall"><a data-toggle="collapse" href="#JAnimation">Bring Those Comics To Life!</a></button>
+               <div class="collapse" id="JAnimation">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_788444121">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.788444121" value="" class="ss-q-short btnvvvsmall" id="entry_788444121" dir="auto" aria-label="JAnimation Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="513142397_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_836547699">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.836547699" id="entry_836547699" aria-label="JAnimation Grade 1  " class="dropdown">
+                              <option value=""></option>
+                              <option value="IV">IV</option>
+                              <option value="V">V</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_2045308085">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.2045308085" value="" class="ss-q-short btnvvvsmall" id="entry_2045308085" dir="auto" aria-label="JAnimation Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="315883788_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1695843359">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1695843359" id="entry_1695843359" aria-label="JAnimation Grade 2" class="dropdown">
+                              <option value=""></option>
+                              <option value="IV">IV</option>
+                              <option value="V">V</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="btnmain"><a data-toggle="collapse" href="#Middle">Middle</a></button>
+            <div class="collapse" id="Middle">
+               <button class="btnsmall"><a data-toggle="collapse" href="#MQuiz">TECH Quiz</a></button>
+               <div class="collapse" id="MQuiz">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_460992566">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.460992566" value="" class="ss-q-short btnvvvsmall" id="entry_460992566" dir="auto" aria-label="M Quiz Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="491679133_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1845384667">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1845384667" id="entry_1845384667" aria-label="M Quiz Grade 1  " class="dropdown">
+                              <option value=""></option>
+                              <option value="VI">VI</option>
+                              <option value="VII">VII</option>
+                              <option value="VIII">VIII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1862989952">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1862989952" value="" class="ss-q-short btnvvvsmall" id="entry_1862989952" dir="auto" aria-label="M Quiz Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="1097997705_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_501521473">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.501521473" id="entry_501521473" aria-label="M Quiz Grade 2  " class="dropdown">
+                              <option value=""></option>
+                              <option value="VI">VI</option>
+                              <option value="VII">VII</option>
+                              <option value="VIII">VIII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1180367733">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1180367733" value="" class="ss-q-short btnvvvsmall" id="entry_1180367733" dir="auto" aria-label="M Quiz Name 3  " title="" placeholder="Participant 3">
+                           <div class="error-message" id="376093714_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_805318466">
+                              <div class="ss-q-title">
+                              </div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.805318466" id="entry_805318466" aria-label="M Quiz Grade 3  " class="dropdown">
+                              <option value=""></option>
+                              <option value="VI">VI</option>
+                              <option value="VII">VII</option>
+                              <option value="VIII">VIII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <button class="btnmain"><a data-toggle="collapse" href="#Senior"><a data-toggle="collapse" href="#Senior">Senior</a></button>
+            <div class="collapse" id="Senior">
+               <button class="btnsmall"><a data-toggle="collapse" href="#SQuiz">TECH Quiz</a></button>
+               <div class="collapse" id="SQuiz">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1387653438">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1387653438" value="" class="ss-q-short btnvvvsmall" id="entry_1387653438" dir="auto" aria-label="S Quiz Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="1213348030_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_326568122">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.326568122" id="entry_326568122" aria-label="S Quiz Grade 1  " class="dropdown">
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1305547453">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1305547453" value="" class="ss-q-short btnvvvsmall" id="entry_1305547453" dir="auto" aria-label="S Quiz Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="652587353_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_442631644">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.442631644" id="entry_442631644" aria-label="S Quiz Grade 2  " class="dropdown">
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1447869473">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1447869473" value="" class="ss-q-short btnvvvsmall" id="entry_1447869473" dir="auto" aria-label="S Quiz Name 3  " title="" placeholder="Participant 3">
+                           <div class="error-message" id="1965683759_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1140791209">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1140791209" id="entry_1140791209" aria-label="S Quiz Grade 3  " class="dropdown">
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="btnsmall"><a data-toggle="collapse" href="#SHack">Hackathon</a></button>
+               <div class="collapse" id="SHack">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_2021002659">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.2021002659" value="" class="ss-q-short btnvvvsmall" id="entry_2021002659" dir="auto" aria-label="S Hackathon Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="855162993_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_422208029">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.422208029" id="entry_422208029" aria-label="S Hackathon Grade 1  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_286306294">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.286306294" value="" class="ss-q-short btnvvvsmall" id="entry_286306294" dir="auto" aria-label="S Hackathon Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="1544338338_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_598696104">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.598696104" id="entry_598696104" aria-label="S Hackathon Grade 2  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1914989320">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1914989320" value="" class="ss-q-short btnvvvsmall" id="entry_1914989320" dir="auto" aria-label="S Hackathon Name 3  " title="" placeholder="Participant 3">
+                           <div class="error-message" id="329822250_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1862269359">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1862269359" id="entry_1862269359" aria-label="S Hackathon Grade 3  " class="dropdown">
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1429000047">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1429000047" value="" class="ss-q-short btnvvvsmall" id="entry_1429000047" dir="auto" aria-label="S Hackathon Name 4  " title="" placeholder="Participant 4">
+                           <div class="error-message" id="437416796_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1642874463">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1642874463" id="entry_1642874463" aria-label="S Hackathon Grade 4  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1697148566">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.1697148566" value="" class="ss-q-short btnvvvsmall" id="entry_1697148566" dir="auto" aria-label="S Hackathon Name 5  " title="" placeholder="Participant 5">
+                           <div class="error-message" id="454395730_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1220446945">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1220446945" id="entry_1220446945" aria-label="S Hackathon Grade 5  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="btnsmall"><a data-toggle="collapse" href="#SProgramming">Programming</a></button>
+               <div class="collapse" id="SProgramming">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_720561288">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.720561288" value="" class="ss-q-short btnvvvsmall" id="entry_720561288" dir="auto" aria-label="S Programming Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="1144546051_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_2101178614">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.2101178614" id="entry_2101178614" aria-label="S Programming Grade 1  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_107209082">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.107209082" value="" class="ss-q-short btnvvvsmall" id="entry_107209082" dir="auto" aria-label="S Programming Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="1348295665_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_1189022875">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.1189022875" id="entry_1189022875" aria-label="S Programming Grade 2  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <button class="btnsmall"><a data-toggle="collapse" href="#SGaming">Gaming</a></button>
+               <div class="collapse" id="SGaming">
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_424051779">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.424051779" value="" class="ss-q-short btnvvvsmall" id="entry_424051779" dir="auto" aria-label="S Gaming Name 1  " title="" placeholder="Participant 1">
+                           <div class="error-message" id="1358388681_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_2041092891">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.2041092891" id="entry_2041092891" aria-label="S Gaming Grade 1  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-text">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_94610443">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <input type="text" name="entry.94610443" value="" class="ss-q-short btnvvvsmall" id="entry_94610443" dir="auto" aria-label="S Gaming Name 2  " title="" placeholder="Participant 2">
+                           <div class="error-message" id="951240044_errorMessage"></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="ss-form-question errorbox-good" role="listitem">
+                     <div dir="auto" class="ss-item  ss-select">
+                        <div class="ss-form-entry">
+                           <label class="ss-q-item-label" for="entry_523114300">
+                              <div class="ss-q-title"></div>
+                              <div class="ss-q-help ss-secondary-text" dir="auto"></div>
+                           </label>
+                           <select name="entry.523114300" id="entry_523114300" aria-label="S Gaming Grade 2  " class="dropdown" >
+                              <option value=""></option>
+                              <option value="IX">IX</option>
+                              <option value="X">X</option>
+                              <option value="XI">XI</option>
+                              <option value="XII">XII</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <input type="hidden" name="draftResponse" value="[null,null,&quot;-2924100939812979296&quot;]
+               ">
+            <input type="hidden" name="pageHistory" value="0">
+            <input type="hidden" name="fbzx" value="-2924100939812979296">
+            <div class="ss-send-email-receipt" style="margin-bottom: 4px;" dir="ltr"><label for="emailReceipt" style="display:inline;"></label></div>
+            <div class="ss-item ss-navigate">
+               <table id="navigation-table">
+                  <tbody>
+                     <tr class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+                        <input type="submit" name="submit" value="Submit" id="ss-submit" class="submitbut jfk-button jfk-button-action ">
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </ol>
+      </form>
+
+			<footer id="myFooter">
+        <div class="container">
+          
+                    <img src="ShriLogo.png" alt="" class="center shrilogo">
+                	<p class="center contactdeets"> Contact: shriteq@tsrs.org or aashish.mandhwani@tsrs.org </p>
+            </div>
+    </footer>
+
+
+      <!--
+         https://docs.google.com/forms/d/132geSk5N_DG3G5LzaxcSDRT-gYswVwbzv-HOxOsrDrE/edit?uiv=0
+         -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <script src="TweenLite.min.js"></script>
+      <script src="EasePack.min.js"></script>
+      <script src="rAF.js"></script>
+      <script src="demo-1.js"></script>
+   </body>
+</html>
